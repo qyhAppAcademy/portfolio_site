@@ -19,7 +19,7 @@
               src="../assets/img/svg/home-run.svg"
               alt="homerun"
             />
-            <span class="menu_content">Home</span></a
+            <span class="menu_content">About</span></a
           >
           <!-- End Home -->
           <a
@@ -27,7 +27,7 @@
             :class="[activetab === 2 ? 'active' : '']"
           >
             <img class="svg" src="../assets/img/svg/avatar.svg" alt="avatar" />
-            <span class="menu_content">About</span></a
+            <span class="menu_content">Skills</span></a
           >
           <!-- End About -->
           <a
@@ -39,7 +39,7 @@
               src="../assets/img/svg/briefcase.svg"
               alt="briefcase"
             />
-            <span class="menu_content">Portfolio</span></a
+            <span class="menu_content">Projects</span></a
           >
           <!-- End Portfolio -->
           <a

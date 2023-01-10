@@ -13,9 +13,10 @@
     <ul class="get_in_touch">
       <li>
         <p>
-          I'm currently looking for a full-time position. If you have a job 
-          opportunity or questions in general, please feel free to 
-          reach me. I am always happy to answer your questions or simply chat!
+          I reside in New York, NY, and am currently looking for a full-time 
+          position. If you have a job opportunity or questions in general, 
+          please feel free to reach me. I am always happy to answer your 
+          questions or chat!
         </p>
       </li>
       <li>
@@ -28,7 +29,7 @@
           >
             <img
               class="svg"
-              :src='require("../assets/img/svg/social/email.svg")'
+              :src='require("../assets/img/svg/social/email-color.svg")'
               alt="email"
             />
           </a>
@@ -44,7 +45,7 @@
           >
             <img
               class="svg"
-              :src='require("../assets/img/svg/social/phone.svg")'
+              :src='require("../assets/img/svg/social/phone-color.svg")'
               alt="phone"
             />
           </a>
@@ -60,7 +61,7 @@
           >
             <img
               class="svg"
-              :src='require("../assets/img/svg/social/resume.svg")'
+              :src='require("../assets/img/svg/social/resume-color.svg")'
               alt="resume"
             />
           </a>
@@ -89,7 +90,7 @@
           >
             <img
               class="svg"
-              :src='require("../assets/img/svg/social/angellist.svg")'
+              :src='require("../assets/img/svg/social/angellist-color.svg")'
               alt="angellist"
             />
           </a>

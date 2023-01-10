@@ -393,8 +393,8 @@ h6 {
   align-items: center;
 }
 .tokyo_tm_home .avatar {
-  min-width: 300px;
-  min-height: 300px;
+  min-width: 333px;
+  min-height: 333px;
   position: relative;
   border-radius: 100%;
 }
@@ -427,31 +427,31 @@ h6 {
 }
 
 .tokyo_tm_home .details {
-  margin-left: 80px;
+  margin-left: 81px;
 }
 .tokyo_tm_home .details .name {
-  font-size: 55px;
-  font-weight: 800;
+  font-size: 45px;
+  font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 }
 .tokyo_tm_home .details .job {
   font-family: "Montserrat";
   font-style: italic;
-  font-weight: 500;
   max-width: 450px;
-  margin-bottom: 30px;
+  margin-bottom: 36px;
+  font-size: 18px;
 }
 .tokyo_tm_home .social {
   width: 100%;
   float: left;
 }
 .social {
-  margin: 24px 0 0 0;
+  margin: 0;
   list-style-type: none;
 }
 .social li {
-  margin: 0px 15px 0px 0px;
+  margin: 0;
   display: inline-block;
 }
 .social li:last-child {
@@ -468,12 +468,12 @@ h6 {
   transition: all 0.3s ease;
 }
 .social li a:hover {
-  filter: opacity(0.7);
+  filter: opacity(0.6);
 }
 .social li .svg {
-  width: 32px;
-  height: 32px;
-  margin-right: 16px;
+  width: 36px;
+  height: 36px;
+  margin-right: 24px;
 }
 
 /*---------------------------------------------------*/
@@ -799,7 +799,7 @@ h6 {
   margin-bottom: 36px;
 }
 .tokyo_tm_title h3 {
-  font-weight: 800;
+  font-weight: 700;
   font-family: "Montserrat";
   font-size: 36px;
 }
@@ -807,9 +807,9 @@ h6 {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.04);
   text-transform: uppercase;
-  padding: 6px 18px;
+  padding: 3px 12px;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 15px;
   color: #333;
   font-family: "Montserrat";
   letter-spacing: 0px;
@@ -1994,7 +1994,7 @@ button.modal-close {
 }
 
 .get_in_touch {
-  width: 800px;
+  width: 750px;
   margin: 0 auto;
   list-style: none;
   display: flex;
@@ -2003,24 +2003,45 @@ button.modal-close {
 }
 
 .get_in_touch li {
-  padding: 12px 12px;
   flex: 1 0 50%;
+  padding: 0 9px;
 }
 
 .get_in_touch li:first-child {
   flex: 0 1 100%;
+  margin: 0 0 36px;
 }
 
 .get_in_touch p {
+  font-family: "Montserrat";
   font-style: italic;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .get_in_touch .svg {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
 }
 
 .get_in_touch_social {
   margin: 0 18px 0 0;
+}
+
+.skills {
+  width: 960px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  border: 1px solid black;
+  flex: 1 0 25%;
+}
+
+.skills li p {
+  text-align: center;
+  font-size: 18px;
 }

@@ -26,6 +26,14 @@
             link: "https://github.com/qyhAppAcademy",
             src: require("../assets/img/svg/social/github.svg"),
           },
+          {
+            link: "resume.pdf",
+            src: require("../assets/img/svg/social/resume.svg"),
+          },
+          {
+            link: "mailto:qyhwork@gmail.com",
+            src: require("../assets/img/svg/social/email.svg"),
+          },
         ],
       };
     },
