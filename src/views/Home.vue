@@ -10,11 +10,11 @@
           >
             <span>
               Q.Y.H
-              <img 
+              <img
                 src="../assets/img/logo/lightbulb.svg"
                 alt="lightbulb"
               />
-            </span>  
+            </span>
           </a>
         </div>
         <!-- End .logo -->

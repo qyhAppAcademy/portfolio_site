@@ -42,8 +42,8 @@ svg {
   height: 15px;
 }
 img.svg {
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
 }
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
@@ -297,14 +297,15 @@ h6 {
     display: none;
   }
   padding: 6px;
+  font-size: 18px;
 }
 .tokyo_tm_all_wrap .leftpart .menu a:hover {
-  background-color: #eeeeee;
+  background-color: #f0f0f0;
   letter-spacing: 2px;
   border-radius: 6px;
 }
 .tokyo_tm_all_wrap .leftpart .menu a.active {
-  background-color: #eeeeee;
+  background-color: #f0f0f0;
   letter-spacing: 2px;
   border-radius: 6px;
 }
@@ -313,11 +314,11 @@ h6 {
   float: left;
 }
 .tokyo_tm_all_wrap .leftpart .copyright p {
+  font-family: "Montserrat";
+  font-style: italic;
   font-size: 12px;
   color: #999;
-  font-family: "Montserrat";
   line-height: 25px;
-  font-style: italic;
 }
 .tokyo_tm_all_wrap .leftpart .copyright a {
   text-decoration: none;
@@ -396,8 +397,8 @@ h6 {
   align-items: center;
 }
 .tokyo_tm_home .avatar {
-  min-width: 333px;
-  min-height: 333px;
+  min-width: 300px;
+  min-height: 300px;
   position: relative;
   border-radius: 100%;
 }
@@ -430,20 +431,20 @@ h6 {
 }
 
 .tokyo_tm_home .details {
-  margin-left: 81px;
+  width: 450px;
+  padding-left: 60px;
 }
 .tokyo_tm_home .details .name {
+  font-family: "Montserrat";
   font-size: 45px;
   font-weight: 700;
-  text-transform: uppercase;
   margin-bottom: 18px;
 }
 .tokyo_tm_home .details .job {
   font-family: "Montserrat";
   font-style: italic;
-  max-width: 450px;
+  font-size: 18px;
   margin-bottom: 36px;
-  font-size: 17px;
 }
 .tokyo_tm_home .social {
   width: 100%;
@@ -454,8 +455,8 @@ h6 {
   list-style-type: none;
 }
 .social li {
-  margin: 0;
   display: inline-block;
+  margin: 0 24px 0 0;
 }
 .social li:last-child {
   margin-right: 0px;
@@ -474,9 +475,8 @@ h6 {
   filter: opacity(0.6);
 }
 .social li .svg {
-  width: 45px;
-  height: 45px;
-  margin-right: 21px;
+  width: 36px;
+  height: 36px;
 }
 
 /*---------------------------------------------------*/
@@ -810,9 +810,9 @@ h6 {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.04);
   text-transform: uppercase;
-  padding: 3px 12px;
+  padding: 6px 15px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
   color: #333;
   font-family: "Montserrat";
   letter-spacing: 0px;
@@ -1598,7 +1598,7 @@ body.modal {
       display: none;
     }
     &:not(:last-child) {
-      margin-right: 9px;
+      margin-right: 15px;
     }
     &.react-tabs__tab--selected {
       filter: invert(0.4);
@@ -2007,7 +2007,7 @@ button.modal-close {
 
 .get_in_touch li {
   flex: 1 0 50%;
-  padding: 0 9px;
+  padding: 0 3px;
 }
 
 .get_in_touch li:first-child {
@@ -2018,17 +2018,18 @@ button.modal-close {
 .get_in_touch p {
   font-family: "Montserrat";
   font-style: italic;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .get_in_touch .svg {
-  width: 45px;
-  height: 45px;
+  width: 48px;
+  height: 48px;
+  padding: 6px 6px;
 }
 
 .get_in_touch .svg:hover {
   opacity: 0.6;
-  transition: 0.6s;
+  transition: all 0.3s ease;
 }
 
 .get_in_touch_social {
@@ -2047,19 +2048,19 @@ button.modal-close {
 .skills > li {
   border-right: 1px solid #e6e6e6;
   flex: 1 0 33%;
+  padding-left: 3px;
 }
 
 .skills > li:last-child {
   border-right: 0;
   flex: 1 0 34%;
-  padding: 0 0 0 6px;
 }
 
 .skills > li > p {
   text-align: center;
-  font-size: 17px;
   font-family: "Montserrat";
   font-style: italic;
+  font-size: 17px;
 }
 
 .skill-logos {
@@ -2080,7 +2081,7 @@ button.modal-close {
 }
 
 .skill-logo-container:hover {
-  background-color: #e6e6e6;
+  background-color: #f0f0f0;
   border-radius: 6px;
 }
 
@@ -2092,15 +2093,10 @@ button.modal-close {
 
 .skill-logo-container > p {
   text-align: center;
-  margin: -12px 0 0 0;
-  font-size: 15px;
   font-family: "Montserrat";
   font-style: italic;
-}
-
-.logo {
-  padding: 0;
-  margin: 0;
+  font-size: 15px;
+  margin: -12px 0 0 0;
 }
 
 .logo a {
@@ -2109,17 +2105,14 @@ button.modal-close {
 }
 
 .logo span {
-  font-size: 36px;
-  color: black;
   font-family: "Montserrat";
-  font-weight: 500;
-  padding: 0;
-  margin: 0;
+  font-size: 36px;
+  font-weight: 600;
+  color: black;
 }
 
-.logo span img {
+.logo img {
   width: 45px;
   height: 45px;
-  margin: -6px 0 0 -12px;
-  padding: 0;
+  margin: -6px 0 0 -9px;
 }
