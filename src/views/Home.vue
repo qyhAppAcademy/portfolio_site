@@ -4,9 +4,18 @@
     <div class="leftpart">
       <div class="leftpart_inner">
         <div class="logo">
-          <router-link to="/"
-            ><img src="../assets/img/logo/dark.png" alt=""
-          /></router-link>
+          <a
+            v-on:click="activetab = 1"
+            :class="[activetab === 1 ? 'active' : '']"
+          >
+            <span>
+              Q.Y.H
+              <img 
+                src="../assets/img/logo/lightbulb.svg"
+                alt="lightbulb"
+              />
+            </span>  
+          </a>
         </div>
         <!-- End .logo -->
         <div class="menu">
@@ -16,7 +25,7 @@
           >
             <img
               class="svg"
-              src="../assets/img/svg/home-run.svg"
+              src="../assets/img/svg/about.svg"
               alt="homerun"
             />
             <span class="menu_content">About</span></a
@@ -26,7 +35,7 @@
             v-on:click="activetab = 2"
             :class="[activetab === 2 ? 'active' : '']"
           >
-            <img class="svg" src="../assets/img/svg/avatar.svg" alt="avatar" />
+            <img class="svg" src="../assets/img/svg/skills.svg" alt="avatar" />
             <span class="menu_content">Skills</span></a
           >
           <!-- End About -->
@@ -36,7 +45,7 @@
           >
             <img
               class="svg"
-              src="../assets/img/svg/briefcase.svg"
+              src="../assets/img/svg/projects.svg"
               alt="briefcase"
             />
             <span class="menu_content">Projects</span></a
@@ -46,21 +55,15 @@
             v-on:click="activetab = 5"
             :class="[activetab === 5 ? 'active' : '']"
           >
-            <img class="svg" src="../assets/img/svg/mail.svg" alt="mail" />
+            <img class="svg" src="../assets/img/svg/contact.svg" alt="mail" />
             <span class="menu_content"> Contact</span></a
           >
           <!-- End Contact -->
         </div>
         <div class="copyright">
           <p>
-            &copy; {{ new Date().getFullYear() }} Tokyo VueJS<br />Created by
-            <a
-              href="https://themeforest.net/user/ib-themes"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Ib-Themes
-            </a>
+            &copy; {{ new Date().getFullYear() }}
+            Tokyo VueJS<br/>Created by Ib-Themes
           </p>
         </div>
         <!-- End copyright -->

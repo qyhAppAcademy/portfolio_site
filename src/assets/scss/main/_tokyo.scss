@@ -42,8 +42,8 @@ svg {
   height: 15px;
 }
 img.svg {
-  width: 15px;
-  height: 15px;
+  width: 42px;
+  height: 42px;
 }
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
@@ -296,21 +296,24 @@ h6 {
   .svg {
     display: none;
   }
+  padding: 6px;
 }
 .tokyo_tm_all_wrap .leftpart .menu a:hover {
-  color: #000;
+  background-color: #eeeeee;
   letter-spacing: 2px;
+  border-radius: 6px;
 }
 .tokyo_tm_all_wrap .leftpart .menu a.active {
-  color: #000;
+  background-color: #eeeeee;
   letter-spacing: 2px;
+  border-radius: 6px;
 }
 .tokyo_tm_all_wrap .leftpart .copyright {
   width: 100%;
   float: left;
 }
 .tokyo_tm_all_wrap .leftpart .copyright p {
-  font-size: 15px;
+  font-size: 12px;
   color: #999;
   font-family: "Montserrat";
   line-height: 25px;
@@ -471,9 +474,9 @@ h6 {
   filter: opacity(0.6);
 }
 .social li .svg {
-  width: 36px;
-  height: 36px;
-  margin-right: 24px;
+  width: 45px;
+  height: 45px;
+  margin-right: 21px;
 }
 
 /*---------------------------------------------------*/
@@ -848,7 +851,7 @@ h6 {
 
 .tokyo_tm_portfolio .portfolio_filter ul li a:hover,
 .tokyo_tm_portfolio .portfolio_filter ul li a.active {
-  color: #000;
+  color: black;
   letter-spacing: 2px;
 }
 .tokyo_tm_portfolio .list_wrapper {
@@ -1595,7 +1598,7 @@ body.modal {
       display: none;
     }
     &:not(:last-child) {
-      margin-right: 15px;
+      margin-right: 9px;
     }
     &.react-tabs__tab--selected {
       filter: invert(0.4);
@@ -1942,7 +1945,7 @@ button.modal-close {
 }
 @media (max-width: 1200px) {
   .tokyo_tm_all_wrap .leftpart a.active img {
-    filter: invert(0.5);
+    // filter: invert(0.5);
   }
 }
 
@@ -2019,12 +2022,17 @@ button.modal-close {
 }
 
 .get_in_touch .svg {
-  width: 36px;
-  height: 36px;
+  width: 45px;
+  height: 45px;
+}
+
+.get_in_touch .svg:hover {
+  opacity: 0.6;
+  transition: 0.6s;
 }
 
 .get_in_touch_social {
-  margin: 0 18px 0 0;
+  margin: 0 9px 0 0;
 }
 
 .skills {
@@ -2088,4 +2096,30 @@ button.modal-close {
   font-size: 15px;
   font-family: "Montserrat";
   font-style: italic;
+}
+
+.logo {
+  padding: 0;
+  margin: 0;
+}
+
+.logo a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo span {
+  font-size: 36px;
+  color: black;
+  font-family: "Montserrat";
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.logo span img {
+  width: 45px;
+  height: 45px;
+  margin: -6px 0 0 -12px;
+  padding: 0;
 }
