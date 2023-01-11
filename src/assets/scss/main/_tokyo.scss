@@ -440,7 +440,7 @@ h6 {
   font-style: italic;
   max-width: 450px;
   margin-bottom: 36px;
-  font-size: 18px;
+  font-size: 17px;
 }
 .tokyo_tm_home .social {
   width: 100%;
@@ -2015,7 +2015,7 @@ button.modal-close {
 .get_in_touch p {
   font-family: "Montserrat";
   font-style: italic;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .get_in_touch .svg {
@@ -2028,7 +2028,7 @@ button.modal-close {
 }
 
 .skills {
-  width: 960px;
+  width: 750px;
   margin: 0 auto;
   list-style: none;
   display: flex;
@@ -2036,12 +2036,56 @@ button.modal-close {
   flex-wrap: wrap;
 }
 
-.skills li {
-  border: 1px solid black;
-  flex: 1 0 25%;
+.skills > li {
+  border-right: 1px solid #e6e6e6;
+  flex: 1 0 33%;
 }
 
-.skills li p {
+.skills > li:last-child {
+  border-right: 0;
+  flex: 1 0 34%;
+  padding: 0 0 0 6px;
+}
+
+.skills > li > p {
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
+  font-family: "Montserrat";
+  font-style: italic;
+}
+
+.skill-logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skill-logos > li {
+  flex: 1 0 33.33%;
+  list-style: none;
+}
+
+.skill-logo-container {
+  width: 100%;
+  height: 80px;
+  padding: 6px 0 0 0;
+}
+
+.skill-logo-container:hover {
+  background-color: #e6e6e6;
+  border-radius: 6px;
+}
+
+.skill-logo-container > svg {
+  width: 100%;
+  height: auto;
+  padding: 0 15px;
+}
+
+.skill-logo-container > p {
+  text-align: center;
+  margin: -12px 0 0 0;
+  font-size: 15px;
+  font-family: "Montserrat";
+  font-style: italic;
 }
