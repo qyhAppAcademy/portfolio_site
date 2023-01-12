@@ -15,7 +15,13 @@
         <img src="../assets/img/portfolio/qelp.png" alt="qelp" />
         <div class="description">
           <div class="description-content">
-            <div class="description-content-title">Qelp</div>
+            <div class="description-content-title">
+              <a
+                href="https://qelp.onrender.com/"
+                target="_blank"
+                rel="noreferrer"
+              >Qelp</a>
+            </div>
             <div class="description-content-technologies">
               <div class="technology">React/Redux</div>
               <div class="technology">Ruby on Rails</div>
