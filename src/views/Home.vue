@@ -52,8 +52,8 @@
           >
           <!-- End Portfolio -->
           <a
-            v-on:click="activetab = 5"
-            :class="[activetab === 5 ? 'active' : '']"
+            v-on:click="activetab = 4"
+            :class="[activetab === 4 ? 'active' : '']"
           >
             <img class="svg" src="../assets/img/svg/contact.svg" alt="mail" />
             <span class="menu_content"> Contact</span></a
@@ -88,7 +88,7 @@
               <Portfolio />
             </div>
             <!-- End Portfolio tabcontent -->
-            <div v-if="activetab === 5" class="tabcontent">
+            <div v-if="activetab === 4" class="tabcontent">
               <Contact />
             </div>
             <!-- End Contact tabcontent -->
