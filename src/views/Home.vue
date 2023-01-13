@@ -26,16 +26,20 @@
             <img
               class="svg"
               src="../assets/img/svg/about.svg"
-              alt="homerun"
+              alt="about"
             />
             <span class="menu_content">About</span></a
           >
-          <!-- End Home -->
+          <!-- End About -->
           <a
             v-on:click="activetab = 2"
             :class="[activetab === 2 ? 'active' : '']"
           >
-            <img class="svg" src="../assets/img/svg/skills.svg" alt="avatar" />
+            <img
+              class="svg"
+              src="../assets/img/svg/skills.svg"
+              alt="skills"
+            />
             <span class="menu_content">Skills</span></a
           >
           <!-- End About -->
@@ -46,27 +50,36 @@
             <img
               class="svg"
               src="../assets/img/svg/projects.svg"
-              alt="briefcase"
+              alt="projects"
             />
             <span class="menu_content">Projects</span></a
           >
-          <!-- End Portfolio -->
+          <!-- End Projects -->
           <a
             v-on:click="activetab = 4"
             :class="[activetab === 4 ? 'active' : '']"
           >
-            <img class="svg" src="../assets/img/svg/contact.svg" alt="mail" />
-            <span class="menu_content"> Contact</span></a
+            <img
+              class="svg"
+              src="../assets/img/svg/experience.svg"
+              alt="experience"
+            />
+            <span class="menu_content">Experience</span></a
+          >
+          <!-- End Experience -->
+          <a
+            v-on:click="activetab = 5"
+            :class="[activetab === 5 ? 'active' : '']"
+          >
+            <img
+              class="svg"
+              src="../assets/img/svg/contact.svg"
+              alt="contact"
+            />
+            <span class="menu_content">Contact</span></a
           >
           <!-- End Contact -->
         </div>
-        <div class="copyright">
-          <p>
-            &copy; {{ new Date().getFullYear() }}
-            Tokyo VueJS<br/>Created by Ib-Themes
-          </p>
-        </div>
-        <!-- End copyright -->
       </div>
     </div>
     <!-- End leftpart -->
@@ -77,18 +90,22 @@
         <div class="tokyo_tm_section">
           <div class="container">
             <div v-if="activetab === 1" class="tabcontent">
-              <Home />
+              <About />
             </div>
             <!-- End Home tabcontent -->
             <div v-if="activetab === 2" class="tabcontent">
-              <About />
+              <Skills />
             </div>
             <!-- End About tabcontent  -->
             <div v-if="activetab === 3" class="tabcontent">
-              <Portfolio />
+              <Projects />
             </div>
-            <!-- End Portfolio tabcontent -->
+            <!-- End Projects tabcontent -->
             <div v-if="activetab === 4" class="tabcontent">
+              <Experience />
+            </div>
+            <!-- End Experience tabcontent -->
+            <div v-if="activetab === 5" class="tabcontent">
               <Contact />
             </div>
             <!-- End Contact tabcontent -->
@@ -101,15 +118,17 @@
 </template>
 
 <script>
-  import Home from "../components/Home";
   import About from "../components/About";
-  import Portfolio from "../components/Portfolio";
+  import Skills from "../components/Skills";
+  import Projects from "../components/Projects";
+  import Experience from "../components/Experience";
   import Contact from "../components/Contact";
   export default {
     components: {
-      Home,
       About,
-      Portfolio,
+      Skills,
+      Projects,
+      Experience,
       Contact,
     },
     data() {

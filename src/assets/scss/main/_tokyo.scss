@@ -991,10 +991,7 @@ ul.react-tabs__tab-list {
   list-style-type: none;
 }
 .tokyo_tm_news ul li {
-  margin: 0px 0px 45px 0px;
-  float: left;
-  width: 50%;
-  padding-left: 50px;
+  width: 750px;
   @media screen and (max-width: 576px) {
     margin: 0px 0px 40px 0px;
   }
@@ -2128,17 +2125,20 @@ button.modal-close {
 
 .project {
   width: 100%;
-  height: 465px;
+  height: 470px;
+  border: 6px outset #e6e6e6;
+  border-radius: 6px;
+  margin-bottom: 36px;
   position: relative;
 }
 
-.project img {
-  display: block;
+.project > img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  display: block;
 }
 
-.project .description {
+.project .description-container {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2151,69 +2151,130 @@ button.modal-close {
   background-color: #7ecc7e;
 }
 
-.project:hover .description {
+.project:hover .description-container {
   opacity: 1;
 }
 
-.description-content {
+.description {
   position: absolute;
   top: 36px;
   left: 60px;
-  width: 630px;
-  max-height: 429px;
-  margin: 0 auto;
+  max-height: 434px;
+  width: 618px;
   color: white;
   font-family: "Montserrat";
   font-style: italic;
-  // background-color: black;
 }
 
-.description-content-title {
+.description-title {
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 9px;
 }
 
-.description-content-title a {
+.description-title a {
   text-decoration: none;
   color: white;
+  opacity: 0.8;
+  transition: all 0.6s ease;
 }
 
-.description-content .technology {
+.description-title a:last-child {
+  float: right;
+}
+
+.description-title a:hover {
+  opacity: 1;
+}
+
+.description-technologies .technology {
   color: white;
-  opacity: 0.8;
   font-size: 17px;
+  opacity: 0.8;
   display: inline;
   padding: 6px 9px;
   transition: all 0.6s ease;
 }
 
-.description-content .technology:hover {
+.description-technologies .technology:hover {
   opacity: 1;
   background-color: #83ec83;
   border-radius: 6px;
-  cursor: pointer;
 }
 
-.description-content-technologies {
+.description-technologies {
   margin-bottom: 12px;
 }
 
-.description-content ul {
+.description > ul {
   list-style: disc inside none;
 }
 
-.description-content ul li {
+.description > ul li {
+  font-size: 13px;
   opacity: 0.8;
-  font-size: 12px;
   padding: 3px 9px;
   transition: all 0.6s ease;
 }
 
-.description-content ul li:hover {
+.description > ul li:hover {
   font-size: 14px;
   opacity: 1;
   background-color: #83ec83;
   border-radius: 6px;
-  cursor: pointer;
+}
+
+.experience {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 750px;
+  margin: 0 auto;
+  list-style: none;
+  font-family: "Montserrat";
+  font-style: italic;
+}
+
+.experience .job-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 3px;
+  color: black;
+}
+
+.experience .company a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.6s ease;
+  color: #767676;
+}
+
+.experience .company a:hover {
+  font-size: 18px;
+}
+
+.experience .company {
+  margin-bottom: 6px;
+}
+
+.experience ul li {
+  list-style: disc inside none;
+  font-size: 14px;
+  color: #767676;
+}
+
+.experience ul li:hover {
+  font-weight: 500;
+}
+
+.experience .job-duration {
+  font-size: 17px;
+  color: #7ecc7e;
+  margin-top: 6px;
+}
+
+.experience > li {
+  padding: 0 1px;
+  margin-bottom: 36px;
 }
