@@ -50,7 +50,7 @@
                 Utilized Google Autocomplete API to facilitate users’ search-by-address experience, and Google Maps API to locate searched businesses and display a business’s data in a modal when selected.
               </li>
               <li>
-                Implemented CRUD functionalities for reviews using a Ruby on Rails RESTful API, JBuilder, and React/Redux to enable users to write a new review on a business, see reviews by all users, and edit or delete their reviews.
+                Developed a RESTful API in a Ruby on Rails backend, and utilized React/Redux to retrieve or upload data in the frontend to achieve CRUD functionalities for reviews.
               </li>
             </ul>
           </div>
@@ -90,7 +90,7 @@
                 Fetched public Portugal trade data for 2020 using Asynchronous JavaScript (AJAX).
               </li>
               <li>
-                Utilized D3.js to construct a world map, a bar chart, and a range slider, bind trade data to them and apply DOM manipulation in the world map and the bar chart when a user selects a particular range.
+                Utilized D3.js to display trade data on a world map and a bar chart, and created a range slider for users to filter trade data dynamically.
               </li>
               <li>
                 Applied Object Oriented Programming to encapsulate trade data and to separate rendering tasks of a world map and a bar chart.
@@ -130,7 +130,7 @@
             </div>
             <ul>
               <li>
-                Led the creation and integration of an Express RESTful API, Redux reducers, and React components, to achieve CRUD functionalities.
+                Created a RESTful API in an Express backend, and utilized React/Redux to receive or send data in the frontend to achieve CRUD functionalities for news figures, news groups, and news articles.
               </li>
               <li>
                 Utilized NYTimes API to retrieve news articles according to a user’s subscribed figures, filtered and sorted by the relevance of new articles.
