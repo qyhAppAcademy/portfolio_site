@@ -28,7 +28,7 @@
             Placed 3rd in the 2021 IBJJF World Nogi championship in the adult blue belt lightweight division.
           </li>
           <li>
-            Taught 5-12-year-old kids classes as an assistant instructor.
+            Taught 5-12-year-old kids classes as an assistant instructor at Marcelo Garcia Jiu-Jitsu Academy from March 2022 to August 2022.
           </li>
         </ul>
         <div class="job-duration">
